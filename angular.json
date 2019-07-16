@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-playground": {
+    "angular-confirm-page": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-playground",
+            "outputPath": "dist/angular-confirm-page",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-playground:build"
+            "browserTarget": "angular-confirm-page:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-playground:build:production"
+              "browserTarget": "angular-confirm-page:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-playground:build"
+            "browserTarget": "angular-confirm-page:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "angular-playground-e2e": {
+    "angular-confirm-page-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-playground:serve"
+            "devServerTarget": "angular-confirm-page:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-playground:serve:production"
+              "devServerTarget": "angular-confirm-page:serve:production"
             }
           }
         },
@@ -137,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "angular-playground"
+  "defaultProject": "angular-confirm-page"
 }
