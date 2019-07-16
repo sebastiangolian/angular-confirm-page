@@ -15,7 +15,6 @@
         "angular.json": true,
         "browserslist": true,
         "package-lock.json": true,
-        "README.md": true,
         "tsconfig.json": true,
         "tslint.json": true,
         ".gitignore": true,

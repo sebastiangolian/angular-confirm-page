@@ -1,8 +1,8 @@
-# angular-playground
-This angular playground
+# angular-confirm-page
+Angular app with confirm page on start
 
 ## Test app 
-[angular-playground](https://sebastiangolian.github.io/angular-playground)
+[angular-confirm-page](https://sebastiangolian.github.io/angular-confirm-page)
 
 ## Getting started
 ```bash
