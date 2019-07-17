@@ -6,6 +6,7 @@ import { AppComponent } from './components/app/app.component';
 import { FormsModule }   from '@angular/forms';
 import { PageHomeComponent } from './components/page-home/page-home.component';
 import { PageConfirmComponent } from './components/page-confirm/page-confirm.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PageConfirmComponent } from './components/page-confirm/page-confirm.com
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   bootstrap: [
     AppComponent
