@@ -1,7 +1,11 @@
-<div id="header" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark text-white border-bottom shadow">
+<div id="header"
+    class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark text-white border-bottom shadow">
     <h5 class="my-0 mr-4"><a href="#" class="text-white">angular-confirm-page</a></h5>
     <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-white" routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a class="p-2 text-white" routerLink="home" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a class="p-2 text-white" routerLink="about" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">About</a>
     </nav>
 </div>
 <div class="container">
@@ -16,7 +20,9 @@
                 </ul>
             </div>
             <div class="col-6 col-md">
-                
+                <ul class="list-unstyled">
+                    <li><a class="text-muted" routerLink="about">About</a></li>
+                </ul>
             </div>
             <div class="col-6 col-md"></div>
             <div class="col-12 col-md">
