@@ -7,6 +7,7 @@ import { FormsModule }   from '@angular/forms';
 import { PageHomeComponent } from './components/page-home/page-home.component';
 import { PageConfirmComponent } from './components/page-confirm/page-confirm.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ModalModule.forRoot()
   ],
   bootstrap: [
     AppComponent

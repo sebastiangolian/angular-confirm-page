@@ -1,19 +1,28 @@
-import { Component, OnInit, ChangeDetectionStrategy, TemplateRef } from '@angular/core';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-confirm',
   templateUrl: './page-confirm.component.html',
-  styleUrls: ['./page-confirm.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./page-confirm.component.css']
 })
 export class PageConfirmComponent implements OnInit {
-  modalRef: BsModalRef;
-  constructor(private modalService: BsModalService) {}
- 
+
+  private resignationUrl: string = "https://www.google.com"
+  private acceptUrl: string = "/home"
+  public config:any = {show: true, ignoreBackdropClick: true, keyboard: false}
+
+  constructor(private router: Router) {}
+   
   ngOnInit() {}
 
-  openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template);
+  accept()
+  {
+    this.router.navigate([this.acceptUrl]);
+  }
+
+  reject()
+  {
+    window.open(this.resignationUrl, '_self');
   }
 }

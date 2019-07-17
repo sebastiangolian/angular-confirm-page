@@ -1,13 +1,22 @@
-<button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
- 
-<ng-template #template>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Modal</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
+<div class="modal-confirm-page">
+  <div [config]="config" bsModal #confirmModal="bs-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="dialog-auto-name" class="modal-title pull-left">Confirm rules</h4>
+        </div>
+        <div class="modal-body">
+          <p>If you want to open another pages, you must confirm the rules</p>
+
+          <button type="button" class="btn btn-default" aria-label="Accept" (click)="accept()">
+            <span aria-hidden="true">Accept</span>
+          </button>
+
+          <button type="button" class="btn btn-default" aria-label="Reject" (click)="reject()">
+            <span aria-hidden="true">Reject</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="modal-body">
-    This is a modal.
-  </div>
-</ng-template>
+</div>
