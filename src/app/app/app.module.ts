@@ -22,7 +22,7 @@ import { PageAboutComponent } from './components/page-about/page-about.component
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(), 
   ],
   bootstrap: [
     AppComponent

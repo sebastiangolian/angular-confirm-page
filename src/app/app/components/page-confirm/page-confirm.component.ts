@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+import { RulesService } from '../../services/rules.service';
 
 @Component({
   selector: 'app-page-confirm',
@@ -12,13 +13,14 @@ export class PageConfirmComponent implements OnInit {
   private acceptUrl: string = "/home"
   public config:any = {show: true, ignoreBackdropClick: true, keyboard: false}
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private rulesService: RulesService) {}
    
   ngOnInit() {}
 
   accept()
   {
-    this.router.navigate([this.acceptUrl]);
+    this.rulesService.setRules()
+    this.router.navigate([this.acceptUrl])
   }
 
   reject()
