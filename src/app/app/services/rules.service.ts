@@ -11,21 +11,11 @@ export class RulesService {
 
   public getRules()
   {
-    return this.getCookie()
+    return Cookie.get(this.COOKIE_KEY)
   }
 
   public setRules()
   {
-    this.setCookie()
-  }
-
-  private setCookie()
-  {
     Cookie.set(this.COOKIE_KEY, '1', 1);
-  }
-
-  private getCookie()
-  {
-    return Cookie.get(this.COOKIE_KEY)
   }
 }
