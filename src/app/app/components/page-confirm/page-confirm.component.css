@@ -1,1 +1,8 @@
-
+.modal {
+    background-image: url(http://lorempixel.com/1800/1000/business/9/);
+    display: flex !important;
+    height: 100%;
+}
+.modal-dialog {
+    margin: auto;
+}
