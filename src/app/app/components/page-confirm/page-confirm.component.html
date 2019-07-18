@@ -8,8 +8,14 @@
         <div class="modal-body">
           <p>If you want to open another pages, you must confirm the rules</p>
 
-          <button type="button" class="btn btn-default" aria-label="Accept" (click)="accept()">
-            <span aria-hidden="true">Accept</span>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" (click)="accept()"> Accept rules
+            </label>
+          </div>
+
+          <button type="button" class="btn btn-default" aria-label="Accept" (click)="confirm()" [disabled]="!isEnabled">
+            <span aria-hidden="true">Confirm</span>
           </button>
 
           <button type="button" class="btn btn-default" aria-label="Reject" (click)="reject()">
